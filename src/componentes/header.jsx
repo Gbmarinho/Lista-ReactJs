@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import './header.module.css'
 
-function App() {
+function Header() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className="Header">
         aaaaaaaaaaaaa
     </div>
   )
 }
 
-export default App
+export default Header
