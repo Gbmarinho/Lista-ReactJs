@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import './header.module.css'
+import styles from './header.module.css'
+import rockt from '../assets/rocket.svg'
 
 function Header() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="Header">
-        aaaaaaaaaaaaa
-    </div>
+    <header className={styles.Header}>
+        <div className={styles.HeaderContent}>
+          <img src={rockt} alt="" />
+          <p>to<span>do</span></p>
+        </div>
+    </header>
   )
 }
 
