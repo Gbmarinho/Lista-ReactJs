@@ -1,0 +1,70 @@
+.NewTarefa{
+    box-sizing: border-box;
+/* Auto layout */
+
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 12px;
+    background: #454545;
+    position: relative;
+    border: 1px solid #333333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    
+}
+.NewTarefa div{
+    position: relative;
+
+}
+.NewTarefa button{
+    margin-top: 1px;
+}
+.NewTarefa input{
+    position: relative;
+    all: unset;
+    border: 2px solid #4EA8DE;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 360px;
+    margin-top: 4px;
+}
+.NewTarefa input:checked{
+    border: 2px solid #5E60CE;
+    background-color: #5E60CE;
+}
+
+.NewTarefa input::after{
+    content: "";
+    left: 6px;
+    top: 7px;
+    width: 4px;
+    height: 8px;
+    position:absolute;
+    display: none;
+    transform: rotate(45deg);
+    border-right: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+}
+.NewTarefa input:checked::after{
+    display: block;
+}
+.NewTarefa input:checked{
+    pointer-events: none;
+}
+.textTarefa{
+    color: #F2F2F2;
+    word-break: break-all;
+    padding-right: 32px;
+}
+input:checked .textTarefa{
+   
+    color: #808080;
+}
+.NewTarefa button{
+    position: absolute;
+    right: 16px;
+    background-color: transparent;
+    border: 0;
+}

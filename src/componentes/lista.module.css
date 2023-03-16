@@ -3,7 +3,7 @@
     justify-content: center;
 }
 .Listacontent{
-    width: 45%;
+    width: 55%;
 }
 .formLista{
     display: grid;
@@ -66,4 +66,9 @@
     gap: 16px;
     align-self: stretch;
     color: #808080;
+}
+.IfhaveTarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
