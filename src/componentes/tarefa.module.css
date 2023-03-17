@@ -69,3 +69,13 @@ input:checked .textTarefa{
     background-color: transparent;
     border: 0;
 }
+@media (max-width: 657px){
+    .textTarefa{
+        font-size: 14px;
+    }
+}
+@media (max-width: 380px){
+    .textTarefa{
+        font-size: 13px;
+    }
+}

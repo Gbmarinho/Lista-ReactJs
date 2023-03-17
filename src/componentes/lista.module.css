@@ -101,3 +101,30 @@
         font-size: 14px;
     }
 }
+@media (max-width:480px){
+    .Listacontent{
+        width: 85%;
+    }
+}
+@media (max-width:400px){
+    .Listacontent{
+        width: 95%;
+    }
+}
+@media (max-width:380px){
+    .IfSemTarefas strong, .IfSemTarefas p{
+        font-size: 13px;
+    }
+    .formLista{
+        top: -20.5px;
+        grid-template-columns: 1fr 80px;
+    }
+    .formLista input{
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .AboutTarefas p, .AboutTarefas strong{
+        font-size: 13px;
+    }
+}
