@@ -17,6 +17,18 @@ function Lista() {
   function tarefaConcluida(){
     setFeitos(feitos + 1);
 }
+function DeletaComentario(comment, indice){
+  const novasTarefas = tarefas.filter(taref => {
+      if(taref[0] != comment){
+        return taref
+      }
+      
+  })
+  if(indice == 1){
+    setFeitos(feitos - 1);
+  }
+  setTarefas(novasTarefas);
+}
   function ColocarTarefas(){
     if(tarefas.length == 0){
         return (<div className={styles.IfSemTarefas}>
@@ -30,7 +42,7 @@ function Lista() {
     }else{
         return (<div className={styles.IfhaveTarefas}>
         {tarefas.map(taref => {
-            return <SingleTarefa key={taref[1]} lin={taref[1]} texto={taref[0]} tarefaCon={tarefaConcluida}/>
+            return <SingleTarefa key={taref[1]} lin={taref[1]} texto={taref[0]} del={DeletaComentario} tarefaCon={tarefaConcluida}/>
         })}
     </div>);
 
