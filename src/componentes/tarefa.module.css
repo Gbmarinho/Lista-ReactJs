@@ -58,6 +58,9 @@
     word-break: break-all;
     padding-right: 32px;
 }
+.tenta{
+    
+}
 input:checked .textTarefa{
    
     color: #808080;

@@ -15,8 +15,7 @@ function Lista() {
     event.target.tarefa.value = '';
   }
   function tarefaConcluida(){
-    let element = document.getElementById();
-    console.log("concluida")
+    setFeitos(feitos + 1);
 }
   function ColocarTarefas(){
     if(tarefas.length == 0){
@@ -31,7 +30,7 @@ function Lista() {
     }else{
         return (<div className={styles.IfhaveTarefas}>
         {tarefas.map(taref => {
-            return <SingleTarefa key={taref[1]} texto={taref[0]} tarefaCon={tarefaConcluida}/>
+            return <SingleTarefa key={taref[1]} lin={taref[1]} texto={taref[0]} tarefaCon={tarefaConcluida}/>
         })}
     </div>);
 
@@ -49,7 +48,7 @@ function Lista() {
             <div className={styles.Tarefas}>
                 <div className={styles.AboutTarefas}>
                     <strong>Tarefas criadas <span>{tarefas.length}</span></strong>
-                    <p>Concluidas <span>0 de {tarefas.length}</span></p>
+                    <p>Concluidas <span>{feitos} de {tarefas.length}</span></p>
                 </div>
             </div>
             {ColocarTarefas()}
