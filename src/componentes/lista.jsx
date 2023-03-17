@@ -54,7 +54,7 @@ function DeletaComentario(comment, indice){
     <div className={styles.Lista}>
         <div className={styles.Listacontent}>
             <form onSubmit={CriarTarefas} className={styles.formLista}>
-                <input  type="text" name="tarefa" placeholder="Adicione uma nova frase"/>
+                <input required  type="text" name="tarefa" placeholder="Adicione uma nova frase"/>
                 <button>Criar <img src={plusCircle} alt="" /></button>
             </form>
             <div className={styles.Tarefas}>

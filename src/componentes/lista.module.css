@@ -33,6 +33,16 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition:0.3s;
+}
+.formLista input:focus{
+    outline: 0;
+}
+.formLista button:hover{
+    transform: scale(1.05);
+}
+.formLista button:active{
+    background-color: #2389c4;
 }
 .AboutTarefas{
     display: flex;
@@ -71,4 +81,23 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+@media (max-width:657px){
+    .IfSemTarefas strong, .IfSemTarefas p{
+        font-size: 14px;
+    }
+    .formLista{
+        top: -23px;
+        grid-template-columns: 1fr 80px;
+    }
+    .formLista input{
+        padding: 13px;
+        font-size: 14px;
+    }
+    .Listacontent{
+        width: 70%;
+    }
+    .AboutTarefas p, .AboutTarefas strong{
+        font-size: 14px;
+    }
 }
